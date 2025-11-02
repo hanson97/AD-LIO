@@ -28,3 +28,14 @@ Fig.6. The odometry result of the Airport dataset.
 Fig.7. The odometry result of the Building dataset.<br>
 ![/PreviewPic/01_Tunnel-LZ-1.gif](https://github.com/hanson97/AD-LIO/blob/main/PreviewPic/08_Building-2.gif)<br>
 Fig.8. The odometry result of the Building dataset.
+### 🔧 Build
+mkdir -p ~/onion_lo_ws/src
+cd ~/onion_lo_ws/src
+git clone git@github.com:hanson97/AD-LIO.git
+cd..
+catkin_make -DCMAKE_BUILD_TYPE=Release
+### 💻 Run
+source devel/setup.bash;
+roslaunch ad_lio ad_lio_run.launch;
+### Acknowledgement
+Thanks for pioneering work [LIO-SAM](https://github.com/yanjingang/LIO-SAM).
